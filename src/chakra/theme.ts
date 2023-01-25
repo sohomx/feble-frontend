@@ -5,7 +5,7 @@ import "@fontsource/open-sans/700.css";
 import { extendTheme } from "@chakra-ui/react"
 
 // 2. Call `extendTheme` and pass your custom values
-const theme = extendTheme({
+export const theme = extendTheme({
   colors: {
     brand: {
       100: "#FF3c00",
