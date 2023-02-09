@@ -2,7 +2,7 @@ import { AuthModalState, authModalState } from "@/src/atoms/authModalAtom";
 import { Input, Button, Flex } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { Text } from "@chakra-ui/react";
-import { RecoilState } from "recoil";
+import { RecoilState, useSetRecoilState } from "recoil";
 
 const SignUp: React.FC = () => {
   const setAuthModalState = useSetRecoilState(authModalState);
@@ -114,7 +114,3 @@ const SignUp: React.FC = () => {
   );
 };
 export default SignUp;
-
-function useSetRecoilState(authModalState: RecoilState<AuthModalState>) {
-  throw new Error("Function not implemented.");
-}
